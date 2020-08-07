@@ -1,4 +1,5 @@
-.menu-btn {
+@include mobile {
+  .menu-btn {
     position: absolute;
     z-index: 1;
     right: 1rem;
@@ -114,6 +115,8 @@
     }
   }
   
+
+
   // პირველიდან 4-მდე იმიტომ, რომ 4 ლინკი გვაქვს ნავიგაციაში. 
   // #{$i} ნიშნავს, რომ იმოქმედოს ყველა შვილზე.
   @for $i from 1 through 4 {
@@ -121,3 +124,8 @@
       transition-delay: ($i * 0.1s) + 0.15s;
     }
   }
+
+  // თუ გვინდა ბოლო შვილი არ ჩაითვალოს :
+  // @for $i from 1 to 4 
+
+}

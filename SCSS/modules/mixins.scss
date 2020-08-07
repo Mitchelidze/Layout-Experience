@@ -35,3 +35,18 @@
       @return #fff;
     }
   }
+
+
+@mixin mobile {
+    @media (max-width: $mobile) {
+        @content;
+    }
+}
+
+
+@mixin flexRight($direction) {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: $direction;
+}

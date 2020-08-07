@@ -1,0 +1,9 @@
+
+.nav {
+    .menu-nav {
+        @include flexRight(row);
+        &__item {
+            padding: 32px;
+        }
+    }
+}
