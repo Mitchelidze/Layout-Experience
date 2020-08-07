@@ -1,6 +1,7 @@
 @import '../modules/mixins.scss';
 @import '../modules/variable.scss';
 
+@media (min-width: 560px) {
 .nav {
     margin-top: 24px;
     .menu-nav {
@@ -26,4 +27,5 @@
             }
         }
     }
+}
 }
